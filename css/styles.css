@@ -166,7 +166,7 @@ body {
 }
 
 .auth-nav .item.icon-envelope::before {
-    background-image: url(../images/envelope\ \(hover\).svg);
+    background-image: url(../images/envelope.svg);
 }
 
 .auth-nav .item.icon-vector::before {
@@ -279,19 +279,19 @@ body {
 } 
 
 .list.icon-antenna::before {
-    background-image: url(../images/antenna\ 1.svg);
+    background-image: url(../images/antenna.svg);
 }
 
 .list.icon-clock::before {
-    background-image: url(../images/clock\ 1.svg);
+    background-image: url(../images/clock.svg);
 }
 
 .list.icon-diagram::before {
-    background-image: url(../images/diagram\ 1.svg);
+    background-image: url(../images/diagram.svg);
 }
 
 .list.icon-astronaut::before {
-    background-image: url(../images/astronaut\ 1.svg);
+    background-image: url(../images/astronaut.svg);
 }
 
 .features .title-features {
@@ -434,6 +434,7 @@ body {
 br {
     display: none;
 }
+
 /* Styles.css for portfolio.html */
 /* Навигация */
 .conteiner-section {
