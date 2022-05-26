@@ -268,7 +268,20 @@ body {
     margin-right: 0;
 }
 
-.features .list::before {
+.rectangle {
+    width: 270px;
+    height: 120px;
+    background: var(--accent-bgr-color);
+}
+
+.rectangle-svg {
+    width: 70px;
+    height: 70px;
+}
+
+/* ::before */
+
+/*.features .list::before {
     content: "";
     display: block;
     height: 120px;
@@ -293,7 +306,7 @@ body {
 .list.icon-astronaut::before {
     background-image: url(../images/astronaut.svg);
 }
-
+*/
 .features .title-features {
     margin-top: 30px;
     margin-bottom: 10px;
@@ -340,21 +353,6 @@ body {
     text-align: center;
 }
 
-.info {
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-.subtitle {
-    margin-top: 0;
-    margin-bottom: 10px;
-    color: var(--title-text-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-}
-
 .team-list {
     display: flex;
 }
@@ -374,6 +372,116 @@ body {
     font-size: 14px;
     line-height: 1.7;
     text-align: center;
+}
+
+.info {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.subtitle {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+/* Постоянные клиенты */
+.client {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: var(--primery-bgr-color);
+}
+
+.client-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--title-text-color);
+}
+
+.client-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    align-items: center;
+}
+
+.client-item {
+    align-items: center;
+    
+}
+
+.client-list .client-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.client-link {
+    display: block;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    background: var(--primery-bgr-color);
+    text-align: center;
+}
+
+.client-link:hover {
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+}
+
+.client-icon:hover {
+    fill: var(--accent-color);
+}
+
+.client-icon {
+    fill: #AFB1B8;
+}
+
+.client-icon.group-1 {
+    width: 41px;
+    height: 46.7px;
+}
+
+.client-icon.group-2 {
+    width: 40px;
+    height: 52px;
+} 
+
+.client-icon.group-3 {
+    width: 43.46px;
+    height: 41.18px;
+} 
+
+.client-icon.group-4 {
+    width: 84.44px;
+    height: 40.62px;
+} 
+
+.client-icon.group-5 {
+    width: 62.54px;
+    height: 45.43px;
+} 
+
+.client-icon.group-6 {
+    width: 93.79px;
+    height: 43.93px;
 }
 
 /* Footer */
@@ -435,6 +543,44 @@ br {
     display: none;
 }
 
+.social .social-title {
+    color: var(--title-white-color);
+}
+
+.social .social-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.social-item {
+    height: 44px;
+    width: 44px;
+}
+
+.social-link {
+    display: block;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    height: 44px;
+    width: 44px;
+    color: var(--title-white-color);
+    background: rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.social-link:hover {
+    background-color: var(--accent-color);
+}
+
+.social-link .social-icon {
+    height: 20px;
+    width: 20px;
+    fill: currentColor;
+}
+
 /* Styles.css for portfolio.html */
 /* Навигация */
 .conteiner-section {
@@ -474,6 +620,8 @@ br {
 .btn .btn-list:hover,
 .btn .btn-list:focus {
     background-color: var(--accent-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .btn .btn-list.current {
@@ -504,6 +652,11 @@ br {
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
+}
+
+.services .sirvices-list:hover {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .sirvices-list {
