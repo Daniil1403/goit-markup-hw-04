@@ -32,7 +32,7 @@ html {
 
 body {
     color: var(--primery-text-color);
-    background-color: var(--primery-bgr-color);
+    background-color: var(--title-white-color);
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
     font-size: 14px;
@@ -145,6 +145,7 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+    fill: var(--primery-text-color);
 }
 
 .auth-nav .socials:hover,
@@ -165,7 +166,8 @@ body {
     padding: 0;
     border: 0;
     margin-right: 10px;
-    color: var(--primery-text-color);
+    height: 80px;
+    fill: inherit;
 }
 
 /* ::before */
@@ -292,6 +294,7 @@ body {
     width: 270px;
     height: 120px;
     background: var(--accent-bgr-color);
+    border-radius: 4px;
 }
 
 .rectangle-svg {
@@ -380,6 +383,7 @@ body {
 .team-list > .list {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    background-color: var(--title-white-color);
 }
 
 .team-list .list:not(:last-child) {
@@ -442,7 +446,8 @@ body {
     text-align: center;
 }
 
-.network-link:hover {
+.network-link:hover,
+.network-link:focus {
     background-color: var(--accent-color);
     color: var(--title-white-color);
 }
@@ -457,7 +462,6 @@ body {
 .client {
     padding-top: 94px;
     padding-bottom: 94px;
-    background-color: var(--primery-bgr-color);
 }
 
 .client-title {
@@ -503,19 +507,18 @@ body {
     border-radius: 4px;
     background: var(--primery-bgr-color);
     text-align: center;
+    fill: #AFB1B8;
 }
 
-.client-link:hover {
+.client-link:hover,
+.client-link:focus {
     border: 1px solid var(--accent-color);
     border-radius: 4px;
-}
-
-.client-icon:hover {
     fill: var(--accent-color);
 }
 
 .client-icon {
-    fill: #AFB1B8;
+    fill: inherit;
 }
 
 .client-icon.group-1 {
@@ -619,6 +622,11 @@ br {
 }
 
 .basement-social .social-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
     color: var(--title-white-color);
 }
 
@@ -635,6 +643,10 @@ br {
     margin: 0;
     list-style: none;
     align-items: center
+}
+
+.social-list .social-item:not(:last-child) {
+    margin-right: 10px;
 }
 
 .social-item {
@@ -656,7 +668,8 @@ br {
     text-align: center;
 }
 
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
     background-color: var(--accent-color);
 }
 
@@ -696,6 +709,7 @@ br {
     line-height: 1.63;
     letter-spacing: 0.03em;  
     text-align: center;
+    border: none;
 }
 
 .btn .list:not(:last-child) {
@@ -704,6 +718,7 @@ br {
 
 .btn .btn-list:hover,
 .btn .btn-list:focus {
+    color: var(--title-white-color);
     background-color: var(--accent-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
